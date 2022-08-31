@@ -1,0 +1,17 @@
+.container {
+  > label.label {
+    @apply block text-2xl text-[#656565] font-bold mb-3;
+  }
+
+  > input.input {
+    @apply px-6 py-3 bg-backgroundColorUi border-divider border rounded-lg placeholder:text-[#656565] w-full;
+  }
+
+  > input.errorInput {
+    @apply border-error mb-2;
+  }
+
+  > span.error {
+    @apply text-error;
+  }
+}

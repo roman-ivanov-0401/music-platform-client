@@ -1,0 +1,28 @@
+@keyframes skeletonKF{
+    0%{
+        background-position-x: -300px;
+    }
+    33% {
+        background-position-x: -300px;
+    }
+    66% {
+        background-position-x: calc(100% + 300px);
+    }
+    100%{
+        background-position-x: calc(100% + 300px);
+
+    }
+}
+
+.skeleton{
+    --bgColor: #ececec;
+    --pulseColor: #c0c0c0;
+    // --pulseColor: #1e1e1e;
+
+    opacity: .8;
+    background-repeat: no-repeat;
+    background-color: var(--bgColor);
+    background-image: linear-gradient(90deg, var(--bgColor) 0%, var(--pulseColor) 33%, var(--pulseColor) 66%, var(--bgColor) 100%);
+    background-size: 300px;
+    animation: skeletonKF linear 2.5s infinite;
+}

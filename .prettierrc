@@ -1,0 +1,28 @@
+{
+	"tabWidth": 2,
+	"semi": true,
+	"useTabs": false,
+	"trailingComma": "es5",
+	"singleQuote": false,
+    "importOrder": [
+        "<THIRD_PATRY_MODULES>",
+        "^@/pages/(.*)$",
+        "^@/layouts/(.*)$",
+        "^@/screens/(.*)$",
+        "^@/components/(.*)$",
+        "^@/ui/(.*)$",
+        "^@/configs/(.*)$",
+        "^@/service/(.*)$",
+        "^@/store/(.*)$",
+        "^@/guards/(.*)$",
+        "^@/hooks/(.*)$",
+        "^@/utils/(.*)$",
+        "^@/assets/(.*)$",
+        "^@/types/(.*)$",
+        "^../(.*)$",
+        "^./(.*)$",
+        "(.scss)$"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+}

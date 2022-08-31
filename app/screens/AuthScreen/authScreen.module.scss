@@ -1,0 +1,31 @@
+.authScreen{
+    @apply flex items-center justify-center py-12 animate-appearence;
+    > .container{
+        @apply w-[600px] p-12 flex flex-col items-center bg-backgroundColorUi rounded-xl gap-6;
+        > .mode{
+            @apply text-3xl font-bold;
+        }
+    
+        > .wrongCredentials{
+            @apply text-error;
+        }
+    
+        > .actions{
+            @apply flex justify-end gap-6 w-full items-center;
+            .switchMode{
+                @apply text-primary hover:underline hover:cursor-pointer
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px){
+    .authScreen{
+        > .container{
+            > .actions{
+                @apply flex-col
+            }
+        }
+    }
+    
+}

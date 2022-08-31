@@ -1,0 +1,33 @@
+.navPoint {
+  @apply flex gap-4 items-center py-2 hover:text-gray-100 px-[30px];
+  > svg {
+    @apply text-3xl;
+  }
+  > .name {
+    @apply text-lg font-bold;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .navPoint {
+    @apply px-[5px];
+    > svg {
+      @apply text-3xl w-full;
+    }
+    > .name {
+      @apply hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .navPoint {
+    @apply px-[5px];
+    > svg {
+      @apply text-3xl w-max;
+    }
+    > .name {
+      @apply block;
+    }
+  }
+}

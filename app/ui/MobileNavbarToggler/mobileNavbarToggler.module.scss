@@ -1,0 +1,13 @@
+.toggler{
+    @apply hidden
+}
+
+
+@media screen and (max-width:540px){
+    .toggler{
+        @apply fixed top-[calc(50%-20px)] -left-2 w-10 h-10 bg-backgroundColorUi flex justify-center items-center border border-divider rounded-r-2xl animate-openNavbar;
+        > svg {
+            @apply relative left-1;
+        }
+    }
+}

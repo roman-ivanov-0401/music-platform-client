@@ -1,0 +1,14 @@
+.searchDropdownPoint {
+  a {
+    @apply flex gap-3 items-center;
+  }
+  img {
+    @apply rounded bg-contain;
+  }
+  .separator {
+    @apply text-xl;
+  }
+  .contentType {
+    @apply text-divider;
+  }
+}

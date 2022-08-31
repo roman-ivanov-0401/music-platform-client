@@ -1,0 +1,37 @@
+.navbar {
+  @apply fixed w-[300px] h-[100vh] top-0 left-0 border-r-divider border-r-[1px] py-[30px] flex flex-col items-center gap-8 animate-appearence;
+   .closeButton{
+    @apply hidden;
+  }
+}
+
+
+@media screen and (max-width: 980px) {
+  .navbar {
+    @apply w-[80px];
+  }
+}
+
+@media screen and (max-width: 540px){
+    .navbar {
+      @apply hidden;
+    }
+
+    .open, .close{
+      @apply block z-20 bg-backgroundColorUi w-screen px-8;
+      > .closeButton{
+        @apply block absolute right-8 top-8 w-10 h-10;
+        > svg{
+          @apply w-full h-full;
+        }
+      }
+    }
+
+    .open{
+      @apply animate-openNavbar;
+    }
+
+    .close{
+      @apply animate-closeNavbar;
+    }
+}

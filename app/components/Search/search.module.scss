@@ -1,0 +1,31 @@
+.search {
+  @apply fixed top-7 w-[calc(100%-300px-60px)] z-10 animate-appearence;
+  > .searchInput {
+    @apply w-full bg-backgroundColorUi px-6 py-3 rounded-xl border-divider border;
+  }
+
+  > .dropdown {
+    @apply mt-2 animate-appearence;
+    > .dropdownPoint {
+      @apply bg-backgroundColorUi px-6 py-3 transition-colors cursor-pointer hover:bg-backgroundInput;
+
+      &:first-child {
+        @apply rounded-t-xl;
+      }
+      &:last-child {
+        @apply rounded-b-xl;
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .search {
+    @apply w-[calc(100%-80px-60px)];
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .search{
+    @apply w-[calc(100%-60px)];
+  }
+}

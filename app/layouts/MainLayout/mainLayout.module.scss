@@ -1,0 +1,28 @@
+.mainLayout {
+  @apply ml-[300px] px-[30px];
+  // &::before{
+  //   @apply w-[calc(100%-300px-60px)] h-[110px] fixed top-0 bg-backgroundColor z-40; 
+  //   content: "";
+  // }
+
+  // &::after{
+  //   @apply w-[calc(100%-300px-60px)] h-[110px] fixed bottom-0 bg-backgroundColor z-40; 
+  //   content: "";
+  // }
+  > .mainContainer {
+    @apply mt-[110px] w-full;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .mainLayout {
+    @apply ml-[80px];
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mainLayout{
+    @apply ml-0;
+  }
+  
+}

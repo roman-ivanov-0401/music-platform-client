@@ -1,0 +1,28 @@
+.logo {
+  @apply flex gap-4 items-center w-max;
+  > .logoBg {
+    @apply bg-primary rounded-full w-12 h-12 flex justify-center items-center shadow-logo;
+    > .icon {
+      @apply text-3xl;
+    }
+  }
+
+  .name {
+    @apply text-lg font-bold select-none;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .logo > .name {
+    @apply hidden;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .logo{
+    @apply mb-10;
+  }
+  .logo > .name {
+    @apply block;
+  }
+}
